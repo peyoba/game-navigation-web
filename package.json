@@ -9,7 +9,9 @@
     "start": "next start",
     "start:p": "next start -p 3005",
     "lint": "next lint",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js",
+    "deploy:cf": "wrangler pages publish .next --project-name=stone-games",
+    "deploy:preview": "wrangler pages dev .next --port 8788"
   },
   "prisma": {
     "seed": "node prisma/seed.js"

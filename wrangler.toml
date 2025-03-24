@@ -1,0 +1,21 @@
+name = "stone-games"
+main = ".next/worker.js"
+compatibility_date = "2023-05-18"
+
+[build]
+command = "npm run build"
+cwd = "."
+watch_dir = "src"
+
+[build.upload]
+format = "service-worker"
+
+[site]
+bucket = ".next"
+
+[env.production]
+workers_dev = false
+route = "aistone.org/*"
+
+[env.development]
+workers_dev = true 

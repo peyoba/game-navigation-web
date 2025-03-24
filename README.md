@@ -134,3 +134,36 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 部署到Cloudflare Pages
+
+### 通过GitHub集成部署
+
+1. 登录到Cloudflare控制台 (https://dash.cloudflare.com/)
+2. 进入"Pages"部分
+3. 点击"连接到Git"
+4. 选择GitHub并授权Cloudflare访问您的仓库
+5. 选择`game-navigation-web`仓库
+6. 配置构建设置：
+   - 构建命令：`npm run build`
+   - 构建输出目录：`.next`
+   - 环境变量：根据需要添加
+7. 点击"保存并部署"
+
+### 配置自定义域名 (aistone.org)
+
+1. 在Cloudflare Pages项目中，点击"自定义域"
+2. 添加`aistone.org`作为自定义域
+3. 在Cloudflare DNS记录中创建CNAME记录，指向Pages提供的域名
+4. 等待DNS记录生效（最多可能需要24小时）
+
+### 使用Cloudflare Wrangler CLI部署
+
+1. 安装Wrangler：`npm install -g wrangler`
+2. 运行：`wrangler pages publish .next --project-name=stone-games`
+3. 按照提示完成部署
+
+### 注意事项
+
+- 确保Cloudflare免费计划内的限制（每天50次部署，每月150,000次请求）
+- 考虑使用Cloudflare Workers和KV存储来增强网站功能
