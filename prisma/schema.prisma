@@ -1,0 +1,41 @@
+// 数据库连接配置
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Prisma Client 配置
+generator client {
+  provider = "prisma-client-js"
+}
+
+// 游戏模型
+model Game {
+  id          Int      @id @default(autoincrement())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // 基本信息
+  titleZh     String   // 中文标题
+  titleEn     String   // 英文标题
+  descZh      String   // 中文描述
+  descEn      String   // 英文描述
+  imageUrl    String   // 游戏图片
+  gameUrl     String   // 游戏链接
+  
+  // 分类关联
+  categoryId  Int
+  category    Category @relation(fields: [categoryId], references: [id])
+  
+  // 状态
+  isActive    Boolean  @default(true)
+}
+
+// 分类模型
+model Category {
+  id          Int      @id @default(autoincrement())
+  nameZh      String   // 中文名称
+  nameEn      String   // 英文名称
+  order       Int      @default(0)
+  games       Game[]
+} 

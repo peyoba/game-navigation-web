@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3b82f6;
+  --primary-dark: #2563eb;
+  --secondary-color: #818cf8;
+  --accent-color: #4f46e5;
+  --background-color: #f8fafc;
+  --card-color: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  font-family: 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-200 hover:shadow-lg;
+}
+
+.btn-primary {
+  @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors;
+}
+
+.section-title {
+  @apply text-xl font-bold mb-4 text-gray-800;
+}
+
+.game-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.category-pill {
+  @apply px-4 py-2 bg-white rounded-lg shadow hover:shadow-md transition cursor-pointer;
+}
+
+.category-pill.active {
+  @apply bg-blue-500 text-white;
+} 
