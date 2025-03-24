@@ -174,7 +174,7 @@ export default function HomePage() {
                                 </svg>
                                 {language === 'zh' ? game.titleZh : game.titleEn}
                               </Link>
-                            </li>
+          </li>
                           ))}
                         </ul>
                         
@@ -192,7 +192,7 @@ export default function HomePage() {
                     </div>
                   )
                 })}
-              </div>
+        </div>
             </section>
           </>
         )}

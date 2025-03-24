@@ -24,7 +24,7 @@ Stone Games是一个现代的游戏导航网站，提供各类网页游戏的聚
 
 1. 克隆仓库
 ```bash
-git clone https://github.com/peyoba/game2.git
+git clone https://github.com/peyoba/game-navigation-web.git
 cd game-navigation-web
 ```
 
@@ -44,7 +44,7 @@ npm run dev
 
 1. 添加GitHub仓库
 ```bash
-git remote add origin https://github.com/peyoba/game2.git
+git remote add origin https://github.com/peyoba/game-navigation-web.git
 git push -u origin main
 ```
 
