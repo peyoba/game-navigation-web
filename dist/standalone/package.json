@@ -1,0 +1,39 @@
+{
+  "name": "game-navigation-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:p": "next dev -p 3005",
+    "build": "next build",
+    "start": "next start",
+    "start:p": "next start -p 3005",
+    "lint": "next lint",
+    "seed": "node prisma/seed.js",
+    "deploy:cf": "wrangler pages publish .next --project-name=stone-games",
+    "deploy:preview": "wrangler pages dev .next --port 8788"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.0",
+    "next": "^14.1.0",
+    "next-i18next": "^15.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.1.0",
+    "postcss": "^8.5.3",
+    "prisma": "^5.10.0",
+    "tailwindcss": "^3.4.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
