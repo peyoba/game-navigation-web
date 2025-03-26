@@ -1,22 +1,5 @@
 {
   "pages": {
-    "/admin/categories/page": [
-      "static/chunks/webpack-616e068a201ad621.js",
-      "static/chunks/fd9d1056-8330337790fd1d70.js",
-      "static/chunks/117-43689a6066216054.js",
-      "static/chunks/main-app-4d4ac39007434af1.js",
-      "static/chunks/648-d2d1b158d87208cb.js",
-      "static/chunks/880-d5b772b2b412db2a.js",
-      "static/chunks/app/admin/categories/page-a4fef5e8427394db.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack-616e068a201ad621.js",
-      "static/chunks/fd9d1056-8330337790fd1d70.js",
-      "static/chunks/117-43689a6066216054.js",
-      "static/chunks/main-app-4d4ac39007434af1.js",
-      "static/css/34daf79c43bf148d.css",
-      "static/chunks/app/layout-4dea7dcb3412923a.js"
-    ],
     "/not-found": [
       "static/chunks/webpack-616e068a201ad621.js",
       "static/chunks/fd9d1056-8330337790fd1d70.js",
@@ -33,6 +16,14 @@
       "static/chunks/main-app-4d4ac39007434af1.js",
       "static/chunks/app/_not-found/page-c1bbe1b4bc8170a6.js"
     ],
+    "/layout": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-8330337790fd1d70.js",
+      "static/chunks/117-43689a6066216054.js",
+      "static/chunks/main-app-4d4ac39007434af1.js",
+      "static/css/34daf79c43bf148d.css",
+      "static/chunks/app/layout-4dea7dcb3412923a.js"
+    ],
     "/admin/add-game/page": [
       "static/chunks/webpack-616e068a201ad621.js",
       "static/chunks/fd9d1056-8330337790fd1d70.js",
@@ -41,6 +32,15 @@
       "static/chunks/648-d2d1b158d87208cb.js",
       "static/chunks/677-d833ad9c24759014.js",
       "static/chunks/app/admin/add-game/page-c0e3269d93374eaa.js"
+    ],
+    "/admin/categories/page": [
+      "static/chunks/webpack-616e068a201ad621.js",
+      "static/chunks/fd9d1056-8330337790fd1d70.js",
+      "static/chunks/117-43689a6066216054.js",
+      "static/chunks/main-app-4d4ac39007434af1.js",
+      "static/chunks/648-d2d1b158d87208cb.js",
+      "static/chunks/880-d5b772b2b412db2a.js",
+      "static/chunks/app/admin/categories/page-a4fef5e8427394db.js"
     ],
     "/admin/delete-game/[id]/page": [
       "static/chunks/webpack-616e068a201ad621.js",

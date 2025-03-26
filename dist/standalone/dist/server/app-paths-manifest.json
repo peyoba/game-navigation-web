@@ -1,12 +1,12 @@
 {
-  "/admin/categories/page": "app/admin/categories/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/admin/add-game/page": "app/admin/add-game/page.js",
+  "/admin/categories/page": "app/admin/categories/page.js",
   "/admin/delete-game/[id]/page": "app/admin/delete-game/[id]/page.js",
   "/admin/edit-game/[id]/page": "app/admin/edit-game/[id]/page.js",
   "/admin/page": "app/admin/page.js",
-  "/game/[id]/page": "app/game/[id]/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/game/[id]/page": "app/game/[id]/page.js",
   "/games/page": "app/games/page.js",
   "/page": "app/page.js",
   "/play/[id]/page": "app/play/[id]/page.js"
