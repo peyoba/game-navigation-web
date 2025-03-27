@@ -1,125 +1,125 @@
-2025-03-27T23:00:15.777Z	Initializing build environment...
-2025-03-27T23:00:21.481Z	Success: Finished initializing build environment
-2025-03-27T23:00:22.316Z	Cloning repository...
-2025-03-27T23:00:25.401Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
-2025-03-27T23:00:25.402Z	Installing project dependencies: npm clean-install --progress=false
-2025-03-27T23:00:37.393Z	
-2025-03-27T23:00:37.393Z	added 45 packages, and audited 46 packages in 12s
-2025-03-27T23:00:37.394Z	
-2025-03-27T23:00:37.394Z	6 packages are looking for funding
-2025-03-27T23:00:37.394Z	  run `npm fund` for details
-2025-03-27T23:00:37.394Z	
-2025-03-27T23:00:37.395Z	found 0 vulnerabilities
-2025-03-27T23:00:37.419Z	Executing user build command:  npm install tailwindcss postcss autoprefixer --no-save && npm run build
-2025-03-27T23:00:41.502Z	
-2025-03-27T23:00:41.502Z	added 1 package, changed 1 package, and audited 46 packages in 4s
-2025-03-27T23:00:41.503Z	
-2025-03-27T23:00:41.503Z	6 packages are looking for funding
-2025-03-27T23:00:41.503Z	  run `npm fund` for details
-2025-03-27T23:00:41.504Z	
-2025-03-27T23:00:41.504Z	found 0 vulnerabilities
-2025-03-27T23:00:41.786Z	
-2025-03-27T23:00:41.786Z	> game-navigation-web@0.1.0 build
-2025-03-27T23:00:41.787Z	> next build && cp _redirects dist/ && cp -r public/* dist/
-2025-03-27T23:00:41.787Z	
-2025-03-27T23:00:42.467Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
-2025-03-27T23:00:42.467Z	This information is used to shape Next.js' roadmap and prioritize features.
-2025-03-27T23:00:42.467Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-2025-03-27T23:00:42.467Z	https://nextjs.org/telemetry
-2025-03-27T23:00:42.468Z	
-2025-03-27T23:00:42.528Z	  ▲ Next.js 14.2.26
-2025-03-27T23:00:42.528Z	
-2025-03-27T23:00:42.596Z	   Creating an optimized production build ...
-2025-03-27T23:00:52.556Z	Failed to compile.
-2025-03-27T23:00:52.556Z	
-2025-03-27T23:00:52.557Z	./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
-2025-03-27T23:00:52.557Z	Error: Cannot find module 'tailwindcss'
-2025-03-27T23:00:52.558Z	Require stack:
-2025-03-27T23:00:52.558Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
-2025-03-27T23:00:52.558Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js
-2025-03-27T23:00:52.558Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/index.js
-2025-03-27T23:00:52.558Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-config.js
-2025-03-27T23:00:52.558Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-build/impl.js
-2025-03-27T23:00:52.558Z	- /opt/buildhome/repo/node_modules/next/dist/compiled/jest-worker/processChild.js
-2025-03-27T23:00:52.558Z	    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
-2025-03-27T23:00:52.558Z	    at /opt/buildhome/repo/node_modules/next/dist/server/require-hook.js:55:36
-2025-03-27T23:00:52.559Z	    at Function.resolve (node:internal/modules/helpers:145:19)
-2025-03-27T23:00:52.559Z	    at loadPlugin (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:49:32)
-2025-03-27T23:00:52.559Z	    at /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:56
-2025-03-27T23:00:52.559Z	    at Array.map (<anonymous>)
-2025-03-27T23:00:52.559Z	    at getPostCssPlugins (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:47)
-2025-03-27T23:00:52.559Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js:124:36
-2025-03-27T23:00:52.560Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:51:40
-2025-03-27T23:00:52.560Z	    at async Span.traceAsyncFn (/opt/buildhome/repo/node_modules/next/dist/trace/trace.js:154:20)
-2025-03-27T23:00:52.561Z	
-2025-03-27T23:00:52.561Z	Import trace for requested module:
-2025-03-27T23:00:52.561Z	./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
-2025-03-27T23:00:52.561Z	./src/app/globals.css
-2025-03-27T23:00:52.565Z	
-2025-03-27T23:00:52.566Z	./src/app/globals.css
-2025-03-27T23:00:52.566Z	Error: Cannot find module 'tailwindcss'
-2025-03-27T23:00:52.566Z	Require stack:
-2025-03-27T23:00:52.566Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
-2025-03-27T23:00:52.567Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js
-2025-03-27T23:00:52.567Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/index.js
-2025-03-27T23:00:52.567Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-config.js
-2025-03-27T23:00:52.567Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-build/impl.js
-2025-03-27T23:00:52.568Z	- /opt/buildhome/repo/node_modules/next/dist/compiled/jest-worker/processChild.js
-2025-03-27T23:00:52.568Z	    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
-2025-03-27T23:00:52.568Z	    at /opt/buildhome/repo/node_modules/next/dist/server/require-hook.js:55:36
-2025-03-27T23:00:52.568Z	    at Function.resolve (node:internal/modules/helpers:145:19)
-2025-03-27T23:00:52.568Z	    at loadPlugin (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:49:32)
-2025-03-27T23:00:52.569Z	    at /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:56
-2025-03-27T23:00:52.569Z	    at Array.map (<anonymous>)
-2025-03-27T23:00:52.569Z	    at getPostCssPlugins (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:47)
-2025-03-27T23:00:52.569Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js:124:36
-2025-03-27T23:00:52.569Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:51:40
-2025-03-27T23:00:52.569Z	    at async Span.traceAsyncFn (/opt/buildhome/repo/node_modules/next/dist/trace/trace.js:154:20)
-2025-03-27T23:00:52.569Z	    at tryRunOrWebpackError (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:312989)
-2025-03-27T23:00:52.569Z	    at __webpack_require_module__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131165)
-2025-03-27T23:00:52.570Z	    at __nested_webpack_require_153728__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:130607)
-2025-03-27T23:00:52.570Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131454
-2025-03-27T23:00:52.570Z	    at symbolIterator (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
-2025-03-27T23:00:52.570Z	    at done (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14824)
-2025-03-27T23:00:52.570Z	    at Hook.eval [as callAsync] (eval at create (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:28858), <anonymous>:15:1)
-2025-03-27T23:00:52.570Z	    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:26012)
-2025-03-27T23:00:52.570Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:130328
-2025-03-27T23:00:52.570Z	    at symbolIterator (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14402)
-2025-03-27T23:00:52.570Z	-- inner error --
-2025-03-27T23:00:52.570Z	Error: Cannot find module 'tailwindcss'
-2025-03-27T23:00:52.571Z	Require stack:
-2025-03-27T23:00:52.571Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
-2025-03-27T23:00:52.571Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js
-2025-03-27T23:00:52.571Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/index.js
-2025-03-27T23:00:52.571Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-config.js
-2025-03-27T23:00:52.572Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-build/impl.js
-2025-03-27T23:00:52.572Z	- /opt/buildhome/repo/node_modules/next/dist/compiled/jest-worker/processChild.js
-2025-03-27T23:00:52.572Z	    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
-2025-03-27T23:00:52.572Z	    at /opt/buildhome/repo/node_modules/next/dist/server/require-hook.js:55:36
-2025-03-27T23:00:52.572Z	    at Function.resolve (node:internal/modules/helpers:145:19)
-2025-03-27T23:00:52.573Z	    at loadPlugin (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:49:32)
-2025-03-27T23:00:52.573Z	    at /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:56
-2025-03-27T23:00:52.573Z	    at Array.map (<anonymous>)
-2025-03-27T23:00:52.573Z	    at getPostCssPlugins (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:47)
-2025-03-27T23:00:52.573Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js:124:36
-2025-03-27T23:00:52.573Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:51:40
-2025-03-27T23:00:52.573Z	    at async Span.traceAsyncFn (/opt/buildhome/repo/node_modules/next/dist/trace/trace.js:154:20)
-2025-03-27T23:00:52.573Z	    at Object.<anonymous> (/opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/opt/buildhome/repo/src/app/globals.css:1:7)
-2025-03-27T23:00:52.573Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:922493
-2025-03-27T23:00:52.573Z	    at Hook.eval [as call] (eval at create (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:28636), <anonymous>:7:1)
-2025-03-27T23:00:52.573Z	    at Hook.CALL_DELEGATE [as _call] (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:25906)
-2025-03-27T23:00:52.573Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131198
-2025-03-27T23:00:52.573Z	    at tryRunOrWebpackError (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:312943)
-2025-03-27T23:00:52.574Z	    at __webpack_require_module__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131165)
-2025-03-27T23:00:52.580Z	    at __nested_webpack_require_153728__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:130607)
-2025-03-27T23:00:52.580Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131454
-2025-03-27T23:00:52.581Z	    at symbolIterator (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
-2025-03-27T23:00:52.581Z	
-2025-03-27T23:00:52.581Z	Generated code for /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/opt/buildhome/repo/src/app/globals.css
-2025-03-27T23:00:52.581Z	
-2025-03-27T23:00:52.581Z	Import trace for requested module:
-2025-03-27T23:00:52.581Z	./src/app/globals.css
-2025-03-27T23:00:52.581Z	
-2025-03-27T23:00:52.582Z	
-2025-03-27T23:00:52.582Z	> Build failed because of webpack errors
-2025-03-27T23:00:52.597Z	Failed: error occurred while running build command
+2025-03-27T23:06:38.266Z	Initializing build environment...
+2025-03-27T23:06:46.402Z	Success: Finished initializing build environment
+2025-03-27T23:06:47.118Z	Cloning repository...
+2025-03-27T23:06:50.148Z	Detected the following tools from environment: npm@10.8.3, nodejs@22.9.0
+2025-03-27T23:06:50.150Z	Installing project dependencies: npm clean-install --progress=false
+2025-03-27T23:07:08.426Z	
+2025-03-27T23:07:08.427Z	added 45 packages, and audited 46 packages in 18s
+2025-03-27T23:07:08.427Z	
+2025-03-27T23:07:08.428Z	6 packages are looking for funding
+2025-03-27T23:07:08.428Z	  run `npm fund` for details
+2025-03-27T23:07:08.434Z	
+2025-03-27T23:07:08.434Z	found 0 vulnerabilities
+2025-03-27T23:07:08.465Z	Executing user build command:  npm install tailwindcss postcss autoprefixer --no-save && npm run build
+2025-03-27T23:07:10.313Z	
+2025-03-27T23:07:10.313Z	up to date, audited 46 packages in 2s
+2025-03-27T23:07:10.315Z	
+2025-03-27T23:07:10.315Z	6 packages are looking for funding
+2025-03-27T23:07:10.315Z	  run `npm fund` for details
+2025-03-27T23:07:10.316Z	
+2025-03-27T23:07:10.316Z	found 0 vulnerabilities
+2025-03-27T23:07:10.770Z	
+2025-03-27T23:07:10.771Z	> game-navigation-web@0.1.0 build
+2025-03-27T23:07:10.771Z	> next build && cp _redirects dist/ && cp -r public/* dist/
+2025-03-27T23:07:10.771Z	
+2025-03-27T23:07:11.504Z	Attention: Next.js now collects completely anonymous telemetry regarding usage.
+2025-03-27T23:07:11.504Z	This information is used to shape Next.js' roadmap and prioritize features.
+2025-03-27T23:07:11.504Z	You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+2025-03-27T23:07:11.505Z	https://nextjs.org/telemetry
+2025-03-27T23:07:11.505Z	
+2025-03-27T23:07:11.577Z	  ▲ Next.js 14.2.26
+2025-03-27T23:07:11.577Z	
+2025-03-27T23:07:11.661Z	   Creating an optimized production build ...
+2025-03-27T23:07:23.596Z	Failed to compile.
+2025-03-27T23:07:23.597Z	
+2025-03-27T23:07:23.598Z	./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
+2025-03-27T23:07:23.598Z	Error: Cannot find module 'tailwindcss'
+2025-03-27T23:07:23.598Z	Require stack:
+2025-03-27T23:07:23.598Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+2025-03-27T23:07:23.598Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+2025-03-27T23:07:23.598Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/index.js
+2025-03-27T23:07:23.599Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-config.js
+2025-03-27T23:07:23.599Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-build/impl.js
+2025-03-27T23:07:23.599Z	- /opt/buildhome/repo/node_modules/next/dist/compiled/jest-worker/processChild.js
+2025-03-27T23:07:23.600Z	    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
+2025-03-27T23:07:23.601Z	    at /opt/buildhome/repo/node_modules/next/dist/server/require-hook.js:55:36
+2025-03-27T23:07:23.601Z	    at Function.resolve (node:internal/modules/helpers:145:19)
+2025-03-27T23:07:23.602Z	    at loadPlugin (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:49:32)
+2025-03-27T23:07:23.602Z	    at /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:56
+2025-03-27T23:07:23.605Z	    at Array.map (<anonymous>)
+2025-03-27T23:07:23.606Z	    at getPostCssPlugins (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:47)
+2025-03-27T23:07:23.606Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js:124:36
+2025-03-27T23:07:23.606Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:51:40
+2025-03-27T23:07:23.606Z	    at async Span.traceAsyncFn (/opt/buildhome/repo/node_modules/next/dist/trace/trace.js:154:20)
+2025-03-27T23:07:23.606Z	
+2025-03-27T23:07:23.606Z	Import trace for requested module:
+2025-03-27T23:07:23.606Z	./src/app/globals.css.webpack[javascript/auto]!=!./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css
+2025-03-27T23:07:23.607Z	./src/app/globals.css
+2025-03-27T23:07:23.607Z	
+2025-03-27T23:07:23.607Z	./src/app/globals.css
+2025-03-27T23:07:23.607Z	Error: Cannot find module 'tailwindcss'
+2025-03-27T23:07:23.607Z	Require stack:
+2025-03-27T23:07:23.607Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+2025-03-27T23:07:23.607Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+2025-03-27T23:07:23.607Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/index.js
+2025-03-27T23:07:23.608Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-config.js
+2025-03-27T23:07:23.608Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-build/impl.js
+2025-03-27T23:07:23.608Z	- /opt/buildhome/repo/node_modules/next/dist/compiled/jest-worker/processChild.js
+2025-03-27T23:07:23.608Z	    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
+2025-03-27T23:07:23.608Z	    at /opt/buildhome/repo/node_modules/next/dist/server/require-hook.js:55:36
+2025-03-27T23:07:23.608Z	    at Function.resolve (node:internal/modules/helpers:145:19)
+2025-03-27T23:07:23.608Z	    at loadPlugin (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:49:32)
+2025-03-27T23:07:23.608Z	    at /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:56
+2025-03-27T23:07:23.608Z	    at Array.map (<anonymous>)
+2025-03-27T23:07:23.608Z	    at getPostCssPlugins (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:47)
+2025-03-27T23:07:23.608Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js:124:36
+2025-03-27T23:07:23.608Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:51:40
+2025-03-27T23:07:23.608Z	    at async Span.traceAsyncFn (/opt/buildhome/repo/node_modules/next/dist/trace/trace.js:154:20)
+2025-03-27T23:07:23.608Z	    at tryRunOrWebpackError (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:312989)
+2025-03-27T23:07:23.609Z	    at __webpack_require_module__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131165)
+2025-03-27T23:07:23.609Z	    at __nested_webpack_require_153728__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:130607)
+2025-03-27T23:07:23.609Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131454
+2025-03-27T23:07:23.609Z	    at symbolIterator (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
+2025-03-27T23:07:23.609Z	    at done (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14824)
+2025-03-27T23:07:23.609Z	    at Hook.eval [as callAsync] (eval at create (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:28858), <anonymous>:15:1)
+2025-03-27T23:07:23.609Z	    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:26012)
+2025-03-27T23:07:23.609Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:130328
+2025-03-27T23:07:23.611Z	    at symbolIterator (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14402)
+2025-03-27T23:07:23.617Z	-- inner error --
+2025-03-27T23:07:23.618Z	Error: Cannot find module 'tailwindcss'
+2025-03-27T23:07:23.618Z	Require stack:
+2025-03-27T23:07:23.618Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js
+2025-03-27T23:07:23.621Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js
+2025-03-27T23:07:23.622Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/index.js
+2025-03-27T23:07:23.622Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-config.js
+2025-03-27T23:07:23.622Z	- /opt/buildhome/repo/node_modules/next/dist/build/webpack-build/impl.js
+2025-03-27T23:07:23.622Z	- /opt/buildhome/repo/node_modules/next/dist/compiled/jest-worker/processChild.js
+2025-03-27T23:07:23.622Z	    at Module._resolveFilename (node:internal/modules/cjs/loader:1248:15)
+2025-03-27T23:07:23.622Z	    at /opt/buildhome/repo/node_modules/next/dist/server/require-hook.js:55:36
+2025-03-27T23:07:23.622Z	    at Function.resolve (node:internal/modules/helpers:145:19)
+2025-03-27T23:07:23.623Z	    at loadPlugin (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:49:32)
+2025-03-27T23:07:23.623Z	    at /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:56
+2025-03-27T23:07:23.623Z	    at Array.map (<anonymous>)
+2025-03-27T23:07:23.623Z	    at getPostCssPlugins (/opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/plugins.js:157:47)
+2025-03-27T23:07:23.623Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/config/blocks/css/index.js:124:36
+2025-03-27T23:07:23.624Z	    at async /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js:51:40
+2025-03-27T23:07:23.624Z	    at async Span.traceAsyncFn (/opt/buildhome/repo/node_modules/next/dist/trace/trace.js:154:20)
+2025-03-27T23:07:23.624Z	    at Object.<anonymous> (/opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/opt/buildhome/repo/src/app/globals.css:1:7)
+2025-03-27T23:07:23.624Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:922493
+2025-03-27T23:07:23.624Z	    at Hook.eval [as call] (eval at create (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:28636), <anonymous>:7:1)
+2025-03-27T23:07:23.625Z	    at Hook.CALL_DELEGATE [as _call] (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:13:25906)
+2025-03-27T23:07:23.625Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131198
+2025-03-27T23:07:23.625Z	    at tryRunOrWebpackError (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:312943)
+2025-03-27T23:07:23.625Z	    at __webpack_require_module__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131165)
+2025-03-27T23:07:23.625Z	    at __nested_webpack_require_153728__ (/opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:130607)
+2025-03-27T23:07:23.625Z	    at /opt/buildhome/repo/node_modules/next/dist/compiled/webpack/bundle5.js:28:131454
+2025-03-27T23:07:23.626Z	    at symbolIterator (/opt/buildhome/repo/node_modules/next/dist/compiled/neo-async/async.js:1:14444)
+2025-03-27T23:07:23.626Z	
+2025-03-27T23:07:23.626Z	Generated code for /opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!/opt/buildhome/repo/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!/opt/buildhome/repo/src/app/globals.css
+2025-03-27T23:07:23.626Z	
+2025-03-27T23:07:23.626Z	Import trace for requested module:
+2025-03-27T23:07:23.629Z	./src/app/globals.css
+2025-03-27T23:07:23.629Z	
+2025-03-27T23:07:23.630Z	
+2025-03-27T23:07:23.630Z	> Build failed because of webpack errors
+2025-03-27T23:07:23.643Z	Failed: error occurred while running build command
